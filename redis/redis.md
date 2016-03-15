@@ -16,8 +16,9 @@ slave-priority 100
 ## fork fail
 
 > https://access.redhat.com/documentation/zh-TW/Red_Hat_Enterprise_Linux/6/html/Performance_Tuning_Guide/s-memory-captun.html
+
 > /proc/sys/vm/overcommit_memory
-              This file contains the kernel virtual memory accounting mode. Values are:
+              This file contains the kernel virtual memory accounting mode. Values are:  
               0: heuristic overcommit (this is the default)
               1: always overcommit, never check
               2: always check, never overcommit
@@ -29,6 +30,7 @@ slave-priority 100
 
 future:
      https://github.com/antirez/redis/issues/3097
+
 new psync:
      https://gist.github.com/antirez/ae068f95c0d084891305
 
@@ -41,7 +43,6 @@ new psync:
     - For Arrays the first byte of the reply is "*"
 
 ## RDB
-
 	https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-RDB-Dump-File-Format
 	https://github.com/sripathikrishnan/redis-rdb-tools/blob/master/docs/RDB_Version_History.textile
 
