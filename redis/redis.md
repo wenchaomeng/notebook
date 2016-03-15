@@ -19,6 +19,7 @@ slave-priority 100
 
 > /proc/sys/vm/overcommit_memory   
               This file contains the kernel virtual memory accounting mode. Values are:  
+
               0: heuristic overcommit (this is the default)
               1: always overcommit, never check
               2: always check, never overcommit
