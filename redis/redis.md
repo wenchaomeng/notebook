@@ -17,7 +17,7 @@ slave-priority 100
 
 > https://access.redhat.com/documentation/zh-TW/Red_Hat_Enterprise_Linux/6/html/Performance_Tuning_Guide/s-memory-captun.html
 
-> /proc/sys/vm/overcommit_memory
+> /proc/sys/vm/overcommit_memory   
               This file contains the kernel virtual memory accounting mode. Values are:  
               0: heuristic overcommit (this is the default)
               1: always overcommit, never check
