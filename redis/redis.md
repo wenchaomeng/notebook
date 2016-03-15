@@ -1,3 +1,6 @@
+redis
+========
+
 1. replication
 
 repo-backlog-size 1mb  缓存大小
