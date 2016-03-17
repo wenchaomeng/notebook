@@ -1,11 +1,13 @@
-redis
+redis笔记
 ========
 [toc]
 
 # replication
+## master-slave
 repo-backlog-size 1mb  缓存大小
 slave-priority 100
 配置为0，永远不会被选为master
+## slave-slave
 
 # problem
 
@@ -17,8 +19,7 @@ slave-priority 100
 
 > https://access.redhat.com/documentation/zh-TW/Red_Hat_Enterprise_Linux/6/html/Performance_Tuning_Guide/s-memory-captun.html
 
-> /proc/sys/vm/overcommit_memory   
-              This file contains the kernel virtual memory accounting mode. Values are:  
+> 参数：/proc/sys/vm/overcommit_memory   
 
               0: heuristic overcommit (this is the default)
               1: always overcommit, never check
@@ -44,6 +45,10 @@ new psync:
     - For Arrays the first byte of the reply is "*"
 
 ## RDB
-	https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-RDB-Dump-File-Format
-	https://github.com/sripathikrishnan/redis-rdb-tools/blob/master/docs/RDB_Version_History.textile
 
+	1. rdb文件格式
+	https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-RDB-Dump-File-Format
+	1. rdb文件格式历史
+	https://github.com/sripathikrishnan/redis-rdb-tools/blob/master/docs/RDB_Version_History.textile
+	1. redis作者写的rdb文件格式与其它数据持久化格式之间的异同
+	http://oldblog.antirez.com/post/redis-persistence-demystified.html
